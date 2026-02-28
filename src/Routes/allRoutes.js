@@ -5,21 +5,21 @@ import Patient from "../pages/Patient";
 import MyMeetingUI from "../pages/Meeting/MeetingPage.jsx";
 import Intern from "../pages/Intern/index.js";
 const Login = React.lazy(() => import("../pages/Authentication/Login"));
-const ForgetPasswordPage = React.lazy(() =>
-  import("../pages/Authentication/ForgetPassword")
+const ForgetPasswordPage = React.lazy(
+  () => import("../pages/Authentication/ForgetPassword"),
 );
 const Logout = React.lazy(() => import("../pages/Authentication/Logout"));
 const Register = React.lazy(() => import("../pages/User"));
 const Setting = React.lazy(() => import("../pages/Setting"));
 const Notification = React.lazy(() => import("../pages/Notification"));
 const Recyclebin = React.lazy(() => import("../pages/Recyclebin"));
-const UserProfile = React.lazy(() =>
-  import("../pages/Authentication/user-profile")
+const UserProfile = React.lazy(
+  () => import("../pages/Authentication/user-profile"),
 );
 const Center = React.lazy(() => import("../pages/Center"));
 const Nurse = React.lazy(() => import("../pages/Nurse"));
-const EmergencyDashboad = React.lazy(() =>
-  import("../pages/DashboardEmergency")
+const EmergencyDashboad = React.lazy(
+  () => import("../pages/DashboardEmergency"),
 );
 const CashManagement = React.lazy(() => import("../pages/CashManagement"));
 const CentralPayment = React.lazy(() => import("../pages/CentralPayment"));
@@ -30,14 +30,15 @@ const WebCamStats = React.lazy(() => import("../pages/WebCamStats"));
 const Report = React.lazy(() => import("../pages/Report"));
 const Pharmacy = React.lazy(() => import("../pages/Inventory"));
 const Guidelines = React.lazy(() => import("../pages/Guidelines"));
-const IncidentReporting = React.lazy(() =>
-  import("../pages/IncidentReporting")
+const IncidentReporting = React.lazy(
+  () => import("../pages/IncidentReporting"),
 );
 const RoundNotes = React.lazy(() => import("../pages/RoundNotes"));
 const HR = React.lazy(() => import("../pages/HR"));
 const MiReporting = React.lazy(() => import("../pages/MIReporting/index.js"));
 const HRMS = React.lazy(() => import("../pages/HRMS"));
 const Referral = React.lazy(() => import("../pages/Referral"));
+const Tally = React.lazy(() => import("../pages/Tally"));
 
 const allElements = [
   { element: Register, label: "User" },
@@ -62,6 +63,7 @@ const allElements = [
   { element: HRMS, label: "HRMS" },
   { element: WebCamStats, label: "Web Cam Stats" },
   { element: Referral, label: "Referral" },
+  { element: Tally, label: "Tally" },
 ];
 
 const authProtectedRoutes = [
@@ -90,6 +92,7 @@ const authProtectedRoutes = [
   { path: "/hrms/*", component: HRMS },
   { path: "/webcamstats/*", component: WebCamStats },
   { path: "/referral", component: Referral },
+  { path: "/tally", component: Tally },
   {
     path: "/",
     exact: true,

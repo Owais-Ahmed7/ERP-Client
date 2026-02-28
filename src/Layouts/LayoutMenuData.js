@@ -39,6 +39,7 @@ const Navdata = () => {
       "hr",
       // "hrms",
       "webcamstats",
+      "tally",
     ];
 
     routes?.sort((a, b) => {
@@ -73,6 +74,8 @@ const Navdata = () => {
     },
     ...sortPages(filteredDynamicPages),
   ];
+
+  console.log({ userPages, menuItems });
 
   return <React.Fragment>{menuItems}</React.Fragment>;
 };

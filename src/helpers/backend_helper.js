@@ -2285,3 +2285,7 @@ export const getEmployeeReportings = (params = {}) => {
     },
   });
 };
+
+// TALLY
+export const sendToTally = (data) => api.create(url.POST_TALLY_SEND, data);
+export const getTallyLogs = (params) => api.get(url.GET_TALLY_LOGS, { params });

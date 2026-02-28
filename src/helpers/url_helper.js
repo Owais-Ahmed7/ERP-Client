@@ -498,3 +498,7 @@ export const CREATE_DEPARTMENTS = "/hr/create/departments";
 
 // upload file
 export const UPLOAD_FILE = "/upload";
+
+// TALLY
+export const POST_TALLY_SEND = "/tally/send";
+export const GET_TALLY_LOGS = "/tally/logs";

@@ -306,6 +306,13 @@ const pages = [
     link: "/webcamstats",
     icon: "bx bx-group",
   },
+  {
+    id: "tally",
+    label: "Tally",
+    name: "Tally",
+    link: "/tally",
+    icon: "bx bx-transfer",
+  },
 ];
 
 export const WebcamStats = [
